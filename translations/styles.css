@@ -1,0 +1,187 @@
+body {
+  background-color: #eee;
+  height: 100%;
+  width: 100%;
+  font-family: garamond;
+}
+
+.crop {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  width: 67px;
+  height: 55px;
+  overflow: hidden;
+}
+.crop img {
+  height: 150px;
+  width: 100px;
+  margin: -75px 0 0 -15px;
+
+  color: white;
+  padding-bottom: px;
+}
+
+#navbar {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  background-color: #000;
+  z-index: 1;
+}
+.dropdown {
+  display: none;
+  margin-top: 10px;
+  color: yellow;
+  margin-right: 20px;
+  float: right;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0px;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.nav-link {
+  display: block;
+  margin-top: 10px;
+  color: yellow;
+  margin-right: 20px;
+  float: right;
+}
+.nav-link a {
+  color: yellow;
+}
+
+.nav-link a:hover {
+  display: inline-block;
+  transform:scale(1.1);
+  text-decoration: none;
+
+}
+
+#wrapper {
+  position: relative;
+  top: 100px;
+
+}
+
+.signup {
+  text-align: center;
+}
+
+#email {
+  width: 300px;
+}
+
+#form {
+  margin-top: 30px;
+}
+
+.material-icons {
+
+
+}
+
+.material-icons.md-48 { font-size: 48px; }
+
+hr {
+  margin-top: 80px;
+}
+
+#How h5  {
+  display: inline-block;
+  position: relative;
+  bottom: 15px;
+  left: 100px;
+}
+
+#How p {
+  display: inline-block;
+}
+
+#How div {
+  padding: 30px;
+}
+
+#How {
+  margin: 60px 150px 0px 150px;
+
+}
+
+.pricing {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.pricing hr {
+  margin-top: 0px;
+}
+
+.box  {
+  text-align: center;
+  margin: 5%;
+  padding: 3%;
+  background: gray;
+  height:100%;
+}
+
+@media screen and (max-width: 700px) {
+  span {
+    display: none;
+  }
+
+  .pricing .box h3 {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  li:nth-child(n+4) {
+    display: none;
+  }
+  .dropdown {
+    display: block;
+    margin-top: 20px;
+  }
+  .dropdown-content {
+    list-style-type: none;
+  }
+  .dropdown-content a {
+    color: yellow;
+    padding: 12px 16px 0px 0px;
+    text-decoration: none;
+    display: block;
+  }
+  .dropdown:hover .dropdown-content {
+      display: block;
+      background-color: black;
+  }
+
+}
+
+@media (max-width: 800px) {
+  #How p {
+    display: block;
+    left: 25px;
+    top: 5px;
+    right: 25px
+  }
+
+  #How div {
+    padding: 10px;
+  }
+
+  #How {
+    margin-left: 25px;
+    margin-right: 25px;
+
+  }
+}

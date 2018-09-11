@@ -1,0 +1,33 @@
+body {
+
+  background: #202a3f;
+}
+
+.container {
+  margin-top: 200px;
+
+}
+
+.glyphicon-search {
+  font-size: 20px;
+}
+
+.btn-default {
+  width: 100px;
+  padding: 12.5px;
+  font-size: 15px;
+
+}
+
+.form-control {
+  padding: 25px;
+  font-size: 20px;
+}
+
+#boxes{
+  font-family: sans-serif;
+}
+
+a {
+  color: black;
+}

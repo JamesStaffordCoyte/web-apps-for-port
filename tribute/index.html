@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<!-- This is the first project from freecodecamp Responsive Web Design Project. It was asked not to
+use any additional technologies and I have kept it within those requirements. I also did not use any
+libraries as using CSS, Flex, Grid to build responsive websites were the main focus of the curriculum
+here and I wanted to make sure I had these fundamentals down before using a library.
+Here are the project requirments:
+*You can use HTML, JavaScript, and CSS to complete this project. Plain CSS is recommended because      *
+*that is what the lessons have covered so far and you should get some practice with plain CSS. You can *
+*use Bootstrap or SASS if you choose. Additional technologies (just for example jQuery, React, Angular,*
+*or Vue) are not recommended for this project, and using them is at your own risk. Other projects will *
+*give you a chance to work with different technology stacks like React. We will accept and try to fix  *
+*all issue reports that use the suggested technology stack for this project. Happy coding!-->
+<html>
+  <head>
+    <title>Becoming Mountains</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+
+  <body>
+    <div id="main">
+      <nav id="navbar">
+        <ul>
+          <!-- Use JQuery to scroll nicer -->
+          <li><a href="#">Home</a></li>
+          <li><a href="#tribute-info">About</a></li>
+        </ul>
+      </nav>
+
+
+    <!-- Use borders to make my own box -->
+      <div id="content">
+
+        <div id="title">
+          <h1>
+            <strong>Miyamoto Musashi</strong>
+          </h1>
+          <h3>宮本武蔵</h3>
+
+        </div>
+        <div id="img-div">
+          <!-- Media query to resize -->
+          <img src="http://www.badassoftheweek.com/musashi.gif" title="Musashi" alt="Musashi" id="image"/>
+          <p id="img-caption">
+            “Aspire to be like Mt. Fuji, with such a broad and solid foundation that the strongest
+              earthquake cannot move you, and so tall that the greatest enterprises of common men seem
+              insignificant from your lofty perspective. With your mind as high as Mt Fuji you can see
+              all things clearly. And you can see all the forces that shape events; not just the things
+              happening near to you.”
+          </p>
+        </div>
+
+        <!-- Update, see if we can make this responsive? -->
+        <div id="tribute-info">
+          <ul>
+            <li> Mushashi was born in Miyamoto village, in Yoshino district, Japan</li>
+            <li> He was a ronin, a wandering Samurai determined to live in harmony with the universe </li>
+            <li> His first student was a boy named Jotaro</li>
+            <li> He fought in the battle of Sekigahara and was shot twice but survived </li>
+            <li> He is known for having fought and killed over 60 people on his travels around Japan </li>
+            <li> There is a great novel about him named "Musashi"</li>
+            <li> The novel is nearly 1000 pages and was the topic of conversation on a podcast with  <a href="https://www.youtube.com/watch?v=7GNRn3GtJ3g" target=_blank>Jocko Willink</a> and Tim Ferriss</li>
+            <li> Musashi is also known for having written <a href="https://en.wikipedia.org/wiki/The_Book_of_Five_Rings" target=_blank>The Book of Five Rings</a></li>
+            <li> <a href="https://en.wikipedia.org/wiki/Miyamoto_Musashi" id="tribute-link" target=_blank>
+              Musashi's Wikipedia Page
+            </a></li>
+          </ul>
+        </div>
+
+        <div id="book">
+
+          <p>Check out the novel:   </p><a href="https://www.amazon.ca/Musashi-Epic-Novel-Samurai-Era/dp/156836427X" target=_blank>
+          <img  src="images/book.jpeg" alt="book cover" id="bookCover">
+          </a>
+        </div>
+      </div>
+      <footer>
+        <p id="contact">
+          Created by James Stafford-Coyte @ <a href="https://www.becomingmountains.com"> Becoming Mountains </a>
+        </p>
+      </footer>
+    </div>
+
+  </body>
+</html>

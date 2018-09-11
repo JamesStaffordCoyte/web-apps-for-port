@@ -1,0 +1,74 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+#main-doc {
+  height: 100%;
+  width: 100%;
+}
+
+#navbar {
+  position: fixed;
+  border-right: 3px solid gray;
+  height: 100%;
+  width: 300px;
+  overflow: scroll;
+}
+
+.info {
+  position: absolute;
+  left: 300px;
+  height: 100%;
+  overflow: scroll;
+  margin: 25px;
+}
+
+.info ul{
+  margin: 20px;
+}
+
+#navbar ul {
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+header {
+  font-size: 30px;
+  min-width: 150px;
+  word-wrap: break-word;
+}
+
+#navbar li {
+  border-bottom: 1px solid black;
+  padding: 25px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #555;
+  font-size: 18px;
+}
+
+code {
+  font-size: 10px;
+}
+
+@media only screen and (max-width: 700px) {
+  #navbar {
+    position: absolute;
+    width: 100%;
+    height: 250px;
+    overflow: scroll;
+  }
+  .info {
+    width: 95%;
+    position: absolute;
+    left: 0px;
+    top: 250px;
+
+    overflow: scroll;
+    margin: 10px;
+  }
+}

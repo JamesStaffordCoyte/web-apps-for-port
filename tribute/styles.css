@@ -1,0 +1,123 @@
+body {
+  margin-top: 0px;
+  background: linear-gradient(180deg, white, black);
+  font-family: 'Tangerine', serif;
+}
+
+#navbar {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  background-color: black;
+  width: 100%;
+}
+
+nav ul {
+  margin: 0px;
+  padding: 5px 0px 5px 30px;
+}
+
+nav li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: silver;
+}
+a:hover {
+  color: red;
+}
+
+div {
+  padding: 30px 10px 10px 0px;
+}
+
+#title {
+  color: teal;
+  padding-bottom: 30px;
+  margin-top: 150px; /*50px when small*/
+  float:left;
+  width: 50%;
+  text-align: center;
+}
+
+#content {
+  padding-top: 5px;
+  background: linear-gradient(360deg, #ffa17f, #00223e);
+  color: #141E30;
+  box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.3);
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: auto;
+  margin-top: 10px;
+  padding: 4px;
+  width: 100%;
+  text-align: center;
+}
+
+#img-div img {
+  display: block;
+  margin-left: auto;
+  margin-right: 100px; /* 30px when small*/
+  width: 30%;
+}
+
+#img-caption {
+  font-style: italic;
+  margin-top: 25px;
+}
+
+#tribute-info ul {
+    margin:0;
+    padding:0;
+    padding-bottom: 15px;
+    text-align:center;
+    list-style:none;
+}
+
+#tribute-info ul li {
+  padding: 2px 5px;
+}
+
+#tribute-info ul li:before {
+  content:'\2022';
+}
+
+#book {
+  display: flex;
+  justify-content: center;
+}
+
+#book p{
+  padding-top: 25px;
+}
+
+ #bookCover {
+   width: 75px;
+   height: 100px;
+}
+
+#book img:hover {
+  transform: scale(1.1);
+}
+
+#contact {
+  color: white;
+  font-size: 14px;
+  text-align: center;
+}
+
+#contact a {
+  color: white;
+}
+
+@media screen and (max-width: 900px) {
+  #img-div img {
+    margin-right: 30px; /* 30px when small*/
+  }
+  #title {
+    margin-top: 50px; /*50px when small*/
+  }
+}

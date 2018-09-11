@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<!-- This is the first project from freecodecamp Responsive Web Design Project. It was asked not to
+use any additional technologies and I have kept it within those requirements. I also did not use any
+libraries as using CSS, Flex, Grid to build responsive websites were the main focus of the curriculum
+here and I wanted to make sure I had these fundamentals down before using a library.
+Here are the project requirments:
+*You can use HTML, JavaScript, and CSS to complete this project. Plain CSS is recommended because      *
+*that is what the lessons have covered so far and you should get some practice with plain CSS. You can *
+*use Bootstrap or SASS if you choose. Additional technologies (just for example jQuery, React, Angular,*
+*or Vue) are not recommended for this project, and using them is at your own risk. Other projects will *
+*give you a chance to work with different technology stacks like React. We will accept and try to fix  *
+*all issue reports that use the suggested technology stack for this project. Happy coding!-->
+<html>
+  <head>
+    <title>Becoming Mountains Translations</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+  </head>
+
+  <body>
+    <div>
+      <header id="header">
+        <nav id=navbar>
+          <ul>
+            <li class="crop" style="float:left">
+            <a href="#"><img id="header-img" src="images/logo.png" alt="logo"></a></li>
+            <div class="dropdown"><i class="fas fa-bars"></i>
+                <div class="dropdown-content">
+                  <li><a href="#howitworks">How It Works</a></li>
+                  <li><a href="#pricing">Pricing</a></li>
+                </div>
+            </div>
+
+            <li class="nav-link">
+              <a href="#">Home</a>
+            </li>
+            <li class="nav-link">
+              <a href="#howitworks">How It Works</a>
+            </li>
+            <li class="nav-link">
+              <a href="#pricing">Pricing</a>
+            </li>
+
+          </ul>
+        </nav>
+      </header>
+
+      <div id="wrapper">
+        <div class="signup">
+          <h1>Welcome to Becoming Mountains Translations</h1>
+          <p>Every word tells a story</p>
+          <p>Please enter your e-mail below to receive newsletters and promotional offers</p>
+          <form id="form" action="https://www.freecodecamp.com/email-submit" method="post">
+            <input id="email" autofocus type="email" name="email" placeholder="Please enter a valid email">
+            <input id="submit" type="submit" name="Submit" value="Submit">
+          </form>
+
+        </div>
+
+        <hr id="howitworks">
+
+
+        <div id="How">
+          <div>
+            <i class="material-icons md-48">language</i>
+            <h5>Who are we? </h5>
+            <p>We offer competitive translating services for French and Chinese (Mandarin or Cantonese).
+               We offer text to text translating or audio/video to text. We also
+            provide subtitle transciption. We offer great rates. For more information please contact us.
+          </p>
+          </div>
+          <div>
+            <i class="material-icons md-48">translate</i>
+            <h5>What do we offer?</h5>
+            <p>We offer competitive translating services for French and Chinese (Mandarin or Cantonese).
+               We offer text to text translating or audio/video to text. We also
+            provide subtitle transciption. We offer great rates. For more information please contact us.
+          </p>
+          </div>
+          <div>
+            <i class="material-icons md-48">computer</i>
+            <h5>Efficiency</h5>
+            <p>We offer competitive translating services for French and Chinese (Mandarin or Cantonese).
+               We offer text to text translating or audio/video to text. We also
+            provide subtitle transciption. We offer great rates. For more information please contact us.
+          </p>
+          </div>
+        </div>
+
+        <hr>
+
+        <div class="pricing" id="pricing">
+          <div class="box">
+            <p>Flex <span>Price</span>
+              <hr>
+            </p>
+            <h3>250$</h3>
+            <p>
+              dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est.</p>
+          </div>
+          <div class="box">
+            <p>Premium <span>Price</span>
+              <hr>
+            </p>
+            <h3>500$</h3>
+            <p>
+              dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Ex
+              cepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+          <div class="box">
+            <p>Exclusive <span>Price</span>
+              <hr>
+            </p>
+            <h3>1000$</h3>
+            <p>
+              dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. E
+              xcepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+
+        </div>
+
+
+        </div>
+    </div>
+  </body>
+</html>

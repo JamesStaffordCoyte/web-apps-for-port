@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<!-- This is the first project from freecodecamp Responsive Web Design Project. It was asked not to
+use any additional technologies and I have kept it within those requirements. I also did not use any
+libraries as using CSS, Flex, Grid to build responsive websites were the main focus of the curriculum
+here and I wanted to make sure I had these fundamentals down before using a library.
+Here are the project requirments:
+*You can use HTML, JavaScript, and CSS to complete this project. Plain CSS is recommended because      *
+*that is what the lessons have covered so far and you should get some practice with plain CSS. You can *
+*use Bootstrap or SASS if you choose. Additional technologies (just for example jQuery, React, Angular,*
+*or Vue) are not recommended for this project, and using them is at your own risk. Other projects will *
+*give you a chance to work with different technology stacks like React. We will accept and try to fix  *
+*all issue reports that use the suggested technology stack for this project. Happy coding!-->
+<html>
+  <head>
+    <title>Suvey Form</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+  </head>
+  <body>
+    <header>
+      <h1 id="title">Survey Form</h1>
+      <p id="description">Let us know how we can improve Becoming Mountains</p>
+    </header>
+
+    <div class="the-form">
+      <form id="survey-form" action="index.html" method="post">
+
+        <div class="row">
+          <div class="label">
+            <label class="text" id="name-label" for="name">Name</label>
+          </div>
+          <div class="input">
+            <input id="name" type="text" name="name" placeholder="Name">
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="label">
+            <label class="text" id="email-label" for="email">Email</label>
+          </div>
+          <div class="input">
+            <input id="email" type="email" name="email" placeholder="Email">
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="label">
+            <label class="text" id="number-label" for="age">Age</label>
+          </div>
+          <div class="input">
+            <input id="number" type="number" name="age" placeholder="Age">
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="label">
+            <label class="text" for="dropdown">What would you most like to read about?</label>
+          </div>
+          <div class="input">
+            <select id="dropdown" name="dropdown-options">
+              <option value="disable" disabled selected>Select an option</option>
+              <option value="job">How to get a job?</option>
+              <option value="topic">Specific topics about a language</option>
+              <option value="travel">Travel</option>
+              <option value="projects">Projects I'm working on</option>
+              <option value="language">Foreign languages</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="label">
+            <fieldset>
+              <legend class="text">How likely would you recommend Becoming Mountains to a friend?</legend>
+          </div>
+
+
+          <div class="input">
+            <ul>
+              <li><input type="radio" name="recommend" value="definitely">
+              <label for="definitely">Definitely</label></li>
+              <li><input type="radio" name="recommend" value="maybe">
+              <label for="maybe">Maybe</label></li>
+              <li><input type="radio" name="recommend" value="not-sure">
+              <label for="not-sure">Not Sure</label></li>
+            </ul>
+            </fieldset>
+          </div>
+        </div>
+
+<!-- TODO: turn radio and checkbox into <ul>
+  and make it responsive
+  Maybe style the dropdown options
+ -->
+        <div class="row">
+          <div class="label">
+            <fieldset>
+              <legend class="text">What would you like to see improved in the future?</legend>
+          </div>
+          <div class="input">
+            <ul>
+              <li><input type="checkbox" name="" value="images">
+              <label for="images">More images</label></li>
+              <li><input type="checkbox" name="" value="frequency">
+              <label for="frequency">More frequent updates</label>
+              </li>
+              <li><input type="checkbox" name="" value="tutorials">
+              <label for="tutorials">Tutorials</label>
+              </li>
+              <li><input type="text" name="" value="">
+               <label for="other">Other</label></li>
+            </ul>
+            </fieldset>
+          </div>
+        </div>
+
+        <div class="comments">
+          <textarea name="name" rows="8" cols="80">Any comments or suggestions</textarea>
+        </div>
+
+        <div class="submit">
+          <input type="submit" name="" value="Submit">
+        </div>
+      </form>
+
+    </div>
+
+  </body>
+
+</html>

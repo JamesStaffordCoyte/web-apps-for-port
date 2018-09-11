@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=devicewidth, initial-scale=1">
+    <meta charset="utf-8">
+    <title>Wikipedia Searcher</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="main.css">
+  </head>
+  <body>
+    <div class="container">
+      <button class="btn btn-default btn-primary" type="submit">  Random <span class="glyphicon glyphicon-circle-arrow-right"></span></button>
+      <form>
+        <div class="input-group">
+          <input id="query" type="text" class="form-control" placeholder="Search" autocomplete="off" autofocus name="search">
+          <div class="input-group-btn">
+            <button class="btn btn-default btn-primary" type="submit"><span class="glyphicon glyphicon-search"></span>Search</button>
+          </div>
+        </div>
+      </form>
+      <br>
+      <div id="boxes">
+
+      </div>
+    </div>
+
+
+    <script src="script.js"></script>
+  </body>
+</html>
